@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="icon" href="./Img/logo.png" sizes="16x16">
+    <title>YourTech</title>
+</head>
+<body>
+    <img class="logo" src="./Img/logo.png">
+    <nav class="menu">
+        <ul>
+            <li class="Somos"><div class="capa_icon"><img class="icon" src="./Img/lupa.png"></div><a href="Quienes Somos.html">Quienes Somos</a></li>
+            <li class="Instalaciones"><div class="capa_icon"><img class="icon" src="./Img/edificio.png"/></div><a href="Instalaciones.html">Instalaciones</a></li>
+            <li class="Servicios"><div class="capa_icon"><img class="icon" src="./Img/Servicios.png"/></div><a href="Servicios.html">Servicios</a></li>
+            <li class="Productos"><div class="capa_icon"><img class="icon" src="./Img/Pc.png"/></div><a href="Productos.html">Productos</a></li>
+            <li class="Contacto"><div class="capa_icon"><img class="icon" src="./Img/contactos.png"/></div><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="contac">
+    <img src="./Img/Mapa.PNG">
+    <h2>Contáctanos</h2>
+    <hr>
+    <p>Puedes contactarnos para resolver tus dudas o consultas escribiendo en el siguiente formulario</p>
+    <ul>
+        <li>Dirección</li>
+        <p>Universidad Europea de Madrid. Campus
+            Villaviciosa de Odón. Calle Tajo S/N Villaviciosa de Odón</p>
+        <li>Madrid TLF</li>
+        <p>91 211 56 73</p>
+        <li>Mail</li>
+        <p><a href="mailto:yourtech@gmail.com">yourtech@gmail.com</a></p>
+    </ul>
+    </div>
+    <br>
+    <form name="formulario" action="mailto:raul.rodriguez@universidadeuropea.es" method="POST">
+        <fieldset>
+            <legend>Déjanos tus datos para que podamos ayudarte</legend>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" required>
+            </p>
+            <p>
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido" required>
+            </p>
+            <p>
+                <label for="dirección">Dirección Postal</label>
+                <br>
+                <textarea cols="30" rows="5" minlength="0" maxlength="200" placeholder="calle,portal,etc."></textarea>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" required placeholder="622170884" maxlength="9" minlength="9">
+            </p>
+            <p>
+                <label for="asunto">Asunto</label><br>
+                <input type="radio" name="asunto" required >Consultoría<br>
+                <input type="radio" name="asunto" required>Desarrollo de Proyectos<br>
+                <input type="radio" name="asunto" required>Realización de Pedidos<br>
+                <input type="radio" name="asunto" required>Otros<br>
+            </p>
+            <p>
+                <label for="comentario">Comentarios</label>
+                <br>
+                <textarea cols="30" rows="5" minlength="0" maxlength="999"></textarea>
+            </p>
+                <button type="submit" name="enviar">Enviar</button>
+                <button type="reset" name="eliminar">Eliminar</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
